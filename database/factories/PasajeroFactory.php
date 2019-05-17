@@ -12,7 +12,10 @@ $factory->define(App\Pasajero::class, function (Faker $faker) {
 		'email' => $faker->email,
         'telefono' => $faker->phoneNumber,
         'fechanacimiento' => $faker->dateTimeBetween($startDate = '-85 years', $endDate = 'now', $timezone = null),
-		'genero' => $faker->numberBetween (0,2)
+		'genero' => $faker->numberBetween (0,2),
+		'vuelo_id' => rand(1,10),
+		'asiento' => rand(1,100),
+		'precio_vuelo' => rand(50,350)
     ];
 });
 

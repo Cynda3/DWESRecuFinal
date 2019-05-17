@@ -13,8 +13,8 @@
           </div>
 
           <div class="links">
-						<a href="">1. Vuelos</a>
-						<a href="">2. Nuevo Pasajero</a>
+						<a href="/seleccionarVuelo">1. Vuelos</a>
+						<a href="/formulario">2. Nuevo Pasajero</a>
 						<a href="">3. Asignar avion</a>
 						<a href="/usuarios">4. API Github</a>
 						<!--

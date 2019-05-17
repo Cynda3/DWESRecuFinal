@@ -22,9 +22,9 @@ class CreatePasajerosTable extends Migration
             $table->string('telefono');
             $table->date('fechanacimiento');
             $table->integer('genero');
-            $table->integer('vuelo_id');
-            $table->integer('asiento');
-            $table->integer('precio_vuelo');
+            $table->integer('vuelo_id')->nullable();
+            $table->integer('asiento')->nullable();
+            $table->integer('precio_vuelo')->nullable();
             $table->timestamps();
         });
     }

@@ -4,7 +4,20 @@
 
 @section('content')
 
-  <h4>Pasajero nuevo</h4>
+    @if(count($errors)>0)
+    <div class="alert alert-danger">
+        <strong>Vaya!</strong>Parece que hay algun error<br><br>
+        <ul>
+            @foreach($errors->all() as $error)
+            <li>{{$error}}</li>
+            @endforeach
+        </ul>
+    </div>
+    @endif
+
+  <form method="POST" action="/agregarPasajero">
+    @csrf
+    <h4>Pasajero nuevo</h4>
     <label>NIF
         <br><input type="text" name="nif"><br>
     </label><br>
@@ -24,6 +37,7 @@
     <label><input type="radio" name="genero"> Hombre</label><br>
     <label><input type="radio" name="genero"> Mujer</label><br>
     <label><input type="radio" name="genero"> Otros</label>
+    <button type="submit">Añadir pasajero</button>
   </form>
   <br>
 

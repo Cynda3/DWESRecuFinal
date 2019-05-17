@@ -9,6 +9,7 @@ $factory->define(App\Pasajero::class, function (Faker $faker) {
 		'nif' => $faker->dni,
 		'nombre' => $faker->firstName,
 		'apellido' => $faker->lastname,
+		'email' => $faker->email,
         'telefono' => $faker->phoneNumber,
         'fechanacimiento' => $faker->dateTimeBetween($startDate = '-85 years', $endDate = 'now', $timezone = null),
 		'genero' => $faker->numberBetween (0,2)

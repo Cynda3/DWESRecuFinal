@@ -4,13 +4,14 @@
 
 @section('content')
 
-  <h3>Github de </h3>
-  <h4>Repositorios publicos: </h4>
-  <h4>Siguiendo a ? usuarios</h4>
+  <h3>Github de {{$user}}</h3>
+  <h4>Repositorios publicos: {{$repositorios}}</h4>
+  <h4>Siguiendo a {{$seguidores}} usuarios</h4>
  <table>
     <tr>
-      <th>Login</th>
-      <th>URL</th>
+    	@foreach($seguidoresLogin as $login)
+      	<th>{{$login}}</th>
+      	@endforeach
     </tr>
 
   </table>

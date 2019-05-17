@@ -16,7 +16,7 @@
 						<a href="">1. Vuelos</a>
 						<a href="">2. Nuevo Pasajero</a>
 						<a href="">3. Asignar avion</a>
-						<a href="">4. API Github</a>
+						<a href="/usuarios">4. API Github</a>
 						<!--
 						<a href="{route('reserva',1)}">Reserva</a> -->
           </div>
